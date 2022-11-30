@@ -10,12 +10,13 @@ const date = new Date();
 const ws = fs.createWriteStream("results.csv");
 
 const client = new Client({
-  user: "admin",
-  host: "localhost",
-  database: "mydb",
-  password: "mypassword",
-  port: 5432,
+  user: process.env.POSTGRES_USER,
+  host: process.env.POSTGRES_HOST,
+  database: process.env.POSTGRES_DB,
+  password: process.env.POSTGRES_PASSWORD,
+  port: process.env.POSTGRES_PORT,
 });
+
 //connect database
 client.connect((err) => {
   if (err) {
@@ -56,6 +57,5 @@ app.get("/users", async (req, res) => {
   );
 });
 
-app.listen(port, () => {
-  console.log(`App running on port ${port}.`);
-});
+app.listen(port);
+console.log(`Running on http://localhost:${port}`);

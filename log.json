@@ -1,0 +1,223 @@
+[
+    {
+        "Id": "342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f",
+        "Created": "2022-11-30T05:39:52.489617248Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "npm",
+            "start"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 3397,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2022-11-30T06:10:51.769811477Z",
+            "FinishedAt": "2022-11-30T11:40:50.799119324+05:30"
+        },
+        "Image": "sha256:21ecbb38cc79dae0e8e59b83fc0bbd6c7ffcc9b459a29abd0ac4109661e24f68",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f/resolv.conf",
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f/hosts",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f/342f374eea4753802264afce9ad422fd49e57edd1fad3beaff77ea67f7034a9f-json.log",
+        "Name": "/api",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": [
+            "76195e7997291dbe7b25f5591ec04ab5e0298920f4a83c34bf87809d53b38cfd"
+        ],
+        "HostConfig": {
+            "Binds": [],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "nodejs_practise_default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/536b9cae5cb86609a8324278c3cb352ad61c589362fa7bd4edd12794531fa62f-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/4da89e08f89b3270c1bc21fe9fe71d3757ed86d34c3a7039e2dc38d87eee809b/diff:/var/snap/docker/common/var-lib-docker/overlay2/fffb8fa17803a285557f3d1faf279b55c34efc035c8b8b9a8a16fda90feff658/diff:/var/snap/docker/common/var-lib-docker/overlay2/4755cb057f42a14411b59e5f96318704ce015be245a8c9fd6b55ce446cef7bc8/diff:/var/snap/docker/common/var-lib-docker/overlay2/efaffbadb7c0717a40a65462b04fcb38c2fcb516d44a7e395823bfeba137ae64/diff:/var/snap/docker/common/var-lib-docker/overlay2/ac34dd22c20e7ac6db82bc84beb351fd465d70cbc1dd9f8b6693c9c6cfe40dc8/diff:/var/snap/docker/common/var-lib-docker/overlay2/cd274b3b590534bf402e7c01b31f1ef2fb5d38ed844086493ecad883258f8987/diff:/var/snap/docker/common/var-lib-docker/overlay2/cd92eb6c878ef09defa49c87717154f5fdbc43681d83fec4e6b1a8ac34ae460a/diff:/var/snap/docker/common/var-lib-docker/overlay2/ebe034f3fa3efffe1e0b35d4ade2529d414e3aa85bccc0c5fcef507f3badb8f9/diff:/var/snap/docker/common/var-lib-docker/overlay2/9b78a241e107f25fabe29eea06b652cc471590d7ccbc6c763dfa8a224dbd0611/diff:/var/snap/docker/common/var-lib-docker/overlay2/8adfdd12605752c7534f09b6bcfdda387d2f048e5458499f9aad0e83821810d6/diff:/var/snap/docker/common/var-lib-docker/overlay2/6cda3cfef092c14d00f8c70078c0be99f4272399375c5ad0c6233e1eb7b292ec/diff:/var/snap/docker/common/var-lib-docker/overlay2/d10a78bc815bf76a87098c8fa17eb714c0fb045b61111f2bdbd08fa766ce7731/diff:/var/snap/docker/common/var-lib-docker/overlay2/3fb1944d0aa49d4bdeb35bb49e15a7475d1cd15d19b7ebde4701e406a8ac4cf4/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/536b9cae5cb86609a8324278c3cb352ad61c589362fa7bd4edd12794531fa62f/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/536b9cae5cb86609a8324278c3cb352ad61c589362fa7bd4edd12794531fa62f/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/536b9cae5cb86609a8324278c3cb352ad61c589362fa7bd4edd12794531fa62f/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "342f374eea47",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3000/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=18.12.1",
+                "YARN_VERSION=1.22.19"
+            ],
+            "Cmd": [
+                "npm",
+                "start"
+            ],
+            "Image": "nodejs_practise_api",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "be720a88cf35daa3d9ed5fb9962d5b0400cb85b151571d290fde65c207d6cdbb",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "nodejs_practise",
+                "com.docker.compose.project.config_files": "docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/mitraksh/Documents/NodeJS_Practise",
+                "com.docker.compose.service": "api",
+                "com.docker.compose.version": "1.29.2"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "329d53684373844fe6a943dc709f0b30acdc89d0d1779809a348dd46eea9b889",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "3000/tcp": null
+            },
+            "SandboxKey": "/run/snap.docker/netns/329d53684373",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "nodejs_practise_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "342f374eea47",
+                        "api"
+                    ],
+                    "NetworkID": "76b0c7b7d0d711006bb93d52fbd05bd3038bd097df9d4f24a090de2e9661b567",
+                    "EndpointID": "299248f18fe2c2a8043eb11f3d899d7156ff9610008e97c87d324ba364349deb",
+                    "Gateway": "172.19.0.1",
+                    "IPAddress": "172.19.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:13:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
