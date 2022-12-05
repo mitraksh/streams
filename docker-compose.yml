@@ -1,19 +1,39 @@
-version: '3.8'
+version: '3.9'
 services:
-  api:
-    container_name: api
-    restart: always
-    build: .
+  node_backend:
+    container_name: node_backend
+    image: node:latest
+    restart: on-failure
+    build: .  
     depends_on:
-      - db
-
-  db:
-    container_name: postgres
-    image: postgres
+      - postgres
     ports:
-      - '5433:${POSTGRES_PORT}'
+      - '3500:3500'
+    volumes:
+      # Maps our current project directory `.` to
+      # our working directory in the container
+      - ./:/usr/src/app/
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+      - '5434:5432'
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+        # When the PostgresSQL container is started it will run any scripts
+        # provided in the `docker-entrypoint-initdb.d` directory, this connects
+        # our seed file to that directory so that it gets run
+        - ./database-seed.sql:/docker-entrypoint-initdb.d/database-seed.sql
+
+  pgadmin-compose:
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "placeholder@example.com"
+            PGADMIN_DEFAULT_PASSWORD: "fakepassword123!"
+        ports:
+            - "16543:80"
+        depends_on:
+            - postgres    
